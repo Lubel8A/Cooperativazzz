@@ -2,15 +2,15 @@
 
 <!-- Page title-->
 <div class="border-bottom pt-5 mt-2 mb-5">
-    <h1 class="mt-2 mt-md-4 mb-3 pt-5">Clientes</h1>
+    <h1 class="mt-2 mt-md-4 mb-3 pt-5">Socios</h1>
     <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
-        <p class="text-muted">Este módulo lista todos los clientes de la tienda.</p>
+        <p class="text-muted">Este módulo lista todos los socios de la cooperativa.</p>
     </div>
 </div>
 <form #updateForm="ngForm" (ngSubmit)="actualizar(updateForm)">
     <div class="card box-shadow-sm">
         <div class="card-header">
-            <h5 style="margin-bottom: 0px;">Actualizar Cliente</h5>
+            <h5 style="margin-bottom: 0px;">Actualizar Socio</h5>
         </div>
         <ng-container *ngIf="load_data">
           <div class="card-body">
@@ -66,7 +66,7 @@
             
         </div>
         <div class="card-body" *ngIf="cliente == undefined">
-            <h3 class="text-center">No se encontró el registro del cliente.</h3>
+            <h3 class="text-center">No se encontró el registro del socio.</h3>
             <div class="row">
                 <div class="col-3 mx-auto">
                     <img src="assets/img/advertencia.png" alt="" style="width: 100%;">
@@ -75,7 +75,7 @@
         </div>
         </ng-container>
         <div class="card-footer">
-            <button *ngIf="!load_btn" class="btn btn-primary mr-4" type="submit">Actualizar Cliente</button>
+            <button *ngIf="!load_btn" class="btn btn-primary mr-4" type="submit">Actualizar Socio</button>
             <!-- Button with growing spinner and text -->
             <button *ngIf="load_btn" type="button" class="btn btn-secondary" disabled>
               <span class="spinner-grow spinner-grow-sm me-2" role="status" aria-hidden="true"></span>
